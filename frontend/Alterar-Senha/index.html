@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURDO SEM FRONTEIRAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+    <header id="header">
+        <a id="logo" href="./index.html">
+            <img src="./img/logo.png" id="surdoslogo"></img>
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="./Login/index.html">ENTRAR</a></li>
+                <li><a href="./Cadastro/index.html">CADASTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="conteudo-sobre">
+        <div class="sobre">
+            <div class="subtitulo">
+                <h1>Altere sua senha</h1>
+                <p>Escolha uma nova senha</p>
+            </div>
+
+            <form class="form-login" method="post" action="" onsubmit="direcionar()">
+                <label for="">SENHA</label>
+                <input type="password" placeholder="8+ Caracteres" required maxlength="8" name="" id="pass1">
+                <label for="">CONFIRME A SENHA</label>
+                <input type="password" placeholder="Digite a nova senha novamente" required maxlength="8" name="" id="pass2">
+                <button type="submit">ALTERAR</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

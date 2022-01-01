@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.background {
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#menu a {
+    display: block;
+    padding: 10px 30px 10px 30px;
+    color: #FFF;
+    text-decoration: none;
+    border: 2px solid #A1A1A1;
+    border-radius: 100px;
+    font-weight: 800;
+}
+
+#menu a:hover {
+    color: #FFF;
+    background: #6F5EDE;
+    border: 2px solid #6F5EDE;
+    border-radius: 100px;
+    font-weight: 800;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#menu {
+    margin-right: 100px;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.background #surdoslogo {
+    width: 80px;
+    height: 70px; 
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-sobre img {
+    Width: 1100px;
+    height: 700px;
+}
+
+.conteudo-sobre .sobre {
+    text-align: center;
+    width: 100%;
+}
+
+.conteudo-sobre .titulo {
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-top: 0px;
+    line-height: 1.2;
+    color: white;
+}
+
+.conteudo-sobre .cor{
+    color:#B0E0E6;
+    text-shadow: 0.4px 0.4px black;
+}
+
+.conteudo-sobre .sobre .subtitulo {
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+}
+
+@media (max-width: 1023px) {
+    #logo {
+        margin-left: 0;
+    }
+
+    #header {
+        margin-top: 0;
+    }
+
+    #menu {
+        /* display: none; */
+        display: block;
+        margin-right: 0;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        background: #fff;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        text-align: center;
+        border: 0;
+        border-radius: 0px;
+        border-bottom: 2px solid rgba(0, 0, 0, .10);
+        color: #000;
+    }
+
+    #menu a:hover {
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        align-items: center;
+        font-weight: 500;
+        color: #FFF;
+    }
+
+    #hamburguer {
+        color: white;
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    nav.active #hamburguer {
+        border-top-color: transparent;
+
+    }
+
+    nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .conteudo-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .background #surdoslogo
+    {
+        margin-top: 10px;
+        width: 70px;
+        height: 60px;
+    }
+
+    .conteudo-sobre .init {
+        display: none;
+    }
+
+    .conteudo-sobre .sobre {
+        margin: 10%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .conteudo-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        margin-top: 6%;
+    }
+
+    .background #surdoslogo
+    {
+        margin-bottom: 15%;
+        width: 60px;
+        height: 50px;
+    }
+
+    .conteudo-sobre .init
+    {
+        display: flex;
+        margin-bottom: 3%;
+    }
+
+    .conteudo-sobre .sobre .titulo{
+        font-size: 50px;
+    }
+
+    .conteudo-sobre .sobre .subtitulo{
+        font-size: 15px;
+    }
+
+    .conteudo-sobre img {
+        width: 510px;
+        height: 330px;
+    }
+
+    #menu {
+        font-size: 14px;
+        margin-left: 50%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1439px)  {
+    .conteudo-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        margin-top: 1%;
+    }
+
+    .background #surdoslogo
+    {
+        margin-bottom: 15%;
+        width: 70px;
+        height: 60px;
+    }
+
+    .conteudo-sobre .init
+    {
+        display: flex;
+        margin-bottom: 3%;
+    }
+
+    .conteudo-sobre .sobre .titulo{
+        font-size: 65px;
+    }
+
+    .conteudo-sobre .sobre .subtitulo{
+        font-size: 20px;
+    }
+
+    .conteudo-sobre img {
+        width: 700px;
+        height: 480px;
+    }
+
+    #menu {
+        font-size: 14px;
+        margin-left: 35%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1440px) {
+    .conteudo-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        margin-top: 2%;
+        margin-right: 0%;
+    }
+
+    .conteudo-sobre .sobre {
+        margin-right: -3%;
+    }
+
+    .conteudo-sobre .init
+    {
+        display: flex;
+        margin-bottom: 4%;
+    }
+
+    .conteudo-sobre .sobre .titulo{
+        font-size: 70px;
+    }
+
+    .conteudo-sobre .sobre .subtitulo{
+        font-size: 22px;
+    }
+
+    .conteudo-sobre img {
+        width: 800px;
+        height: 550px;
+    }
+
+    #menu {
+        margin-left: 35%;
+        justify-content: space-evenly;
+    }
+}

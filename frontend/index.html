@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SURDO SEM FRONTEIRAS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+    </head>
+    <body onload="verificarLogado()" class="background">
+        <div id="notification"></div> 
+        <header id="header">
+            <a id="logo" href="./index.html">
+                <img src="./img/logo.png" id="surdoslogo"></img>
+            </a>
+            <nav id="nav">
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="./Login/index.html">ENTRAR</a></li>
+                    <li><a href="./Cadastro/index.html">CADASTRO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="conteudo-sobre">
+            <div class="sobre"> 
+                <h1 class="titulo"><span class="cor">S</span>urdos <span class="cor">S</span>em <span class="cor">F</span>ronteiras</h1>
+                <h2 class="subtitulo">Domine as tecnologias utilizadas pelas empresas no
+                <br>mercado atual, e se torne um profissional completo 
+                <br>com os nossos cursos com foco para deficientes auditivos!</h2>
+            </div>
+
+            <div class="init">
+                <img src="./img/sobre.png" alt="">
+            </div>
+
+        </section>
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <script src="index.js"></script>
+        <script src="./js/bootstrap.js"></script>
+    </body>
+</html>
